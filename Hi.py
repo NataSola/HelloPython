@@ -1,2 +1,1 @@
-print ('hello')
-print ('O_o')
+import this

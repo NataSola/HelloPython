@@ -15,3 +15,19 @@ print (name)
 # предпочительный вариант: перед сохранением данных, всё перевести в нижний регистр. Перед выводом использовать нужный регистр
 name = name.lower()
 print (name)
+
+# удаление пробелов в начале / конце строки
+name = ' Nata '
+print(f"'{name}'")
+
+name = ' Nata ' 
+name = name.rstrip() # удаление пробела в конце
+print(f"'{name}'")
+
+name = ' Nata '
+name = name.lstrip() # удаление пробела в начале
+print(f"'{name}'")
+
+name = ' Nata '
+name = name.strip() # удаление пробела с обеих сторон
+print(f"'{name}'")

@@ -1,4 +1,4 @@
-friends = ['tom', 'sara', 'julia', 'peter', 'lena', 'jim']
+friends = ['tom', 'sara', '' , 'julia', 'peter', 'lena', 'jim']
 message = f'My oldest friend is {friends[3].title()}'
 print (message)
 print (friends[-2].title())

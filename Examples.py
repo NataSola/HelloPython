@@ -25,3 +25,27 @@ def jj(c):
 
 
 print (round(jj(c),3))
+
+
+# Дано число из отрезка [10, 99]. Показать наибольшую цифру числа
+import random
+import os
+
+def ParsIntToList(a):  # Разбирает число на список
+    numbers = []
+    while a > 0:
+        numbers.append(a % 10)
+        a //= 10
+    numbers.reverse()
+    return numbers
+
+def MaxInList(list):  # Возвращает максимальное число в списке
+    max = list[0]
+    for i in list:
+        if i > max: max = i
+    return max
+
+n = random.randint(10, 99)
+os.system('cls')
+print(f'N = {n}')
+print(f'{MaxInList(ParsIntToList(n))} является максимальной цифрой числа')
